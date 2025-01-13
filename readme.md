@@ -66,21 +66,30 @@ Manager expenseManager = new Manager();
 expenseManager.addUser(new User("u1", "User1", "user1@email.com", 1234567890));
 ```
 
-// Format: EXPENSE <user-id> <amount> <no-of-users> <users> <split-type> <values>
+# Format:
 
-// Equal Split Example
+```bash
+EXPENSE <user-id> <amount> <no-of-users> <users> <split-type> <values>
+```
+
+# Equal Split Example
+
 EXPENSE u1 1000 4 u1 u2 u3 u4 EQUAL
 
-// Exact Split Example
+# Exact Split Example
+
 EXPENSE u1 1000 4 u1 u2 u3 u4 EXACT 250 250 250 250
 
-// Percent Split Example
+# Percent Split Example
+
 EXPENSE u1 1000 4 u1 u2 u3 u4 PERCENT 25 25 25 25
 
-// Show all balances
+# Show all balances
+
 SHOW
 
-// Show balance for specific user
+# Show balance for specific user
+
 SHOW u1
 
 How to Run
